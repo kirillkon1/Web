@@ -13,8 +13,12 @@
 
 .footer span{
     color: white;
+    font-family: Arial, cursive;
 }
 
+/*
+    Логотипы наши
+*/
 
 .logo:hover {
     transition: 0.4s;

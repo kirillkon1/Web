@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno&display=swap");
-
-* {
-    font-family: "MuseoModerno", cursive;
-}
-
 .header {
     height: 90px;
     width: 100%;
@@ -13,13 +7,16 @@
     box-shadow: 0 0 20px 5px darkred;
 }
 
+/* Всё что справа:*/
 
 .header .lab-name{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 2.2vw;
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* Всё что слева:*/
 
 .header div {
     display: flex;
@@ -30,14 +27,15 @@
 
 .header span, a{
     color: white;
-    font-size: 15px;
+    font-size: 1.2vw;
     font-weight: bold;
     text-decoration: none;
 }
 
-a:hover {
+.header a:hover {
     color: orange;
     font-size: 17px;
     transition: 0.5s;
     text-shadow: 0 0 20px red;
+    text-decoration: none;
 }
