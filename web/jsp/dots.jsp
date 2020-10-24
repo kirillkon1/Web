@@ -3,9 +3,9 @@
 
 <jsp:useBean id="entries" scope="session" class="main.java.models.Entries"/>
 <c:forEach var="entry" items="${entries.entries}">
-    <circle r="5"
-            cx=${(entry.x * 2) / entry.r * 50 + 300 / 2}
-            cy=${300 / 2 - (entry.y * 2) / entry.r * 50}
+    <circle r="3.5"
+            cx=${(300 - (300 / 2 - entry.x * 100 + 167))}
+            cy=${(300 - (300 / 2 - entry.y * 100 + 167))}
             id="target-dot"
             fill=${entry.result ? "green" : "red"}/>
 </c:forEach>

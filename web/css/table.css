@@ -27,3 +27,9 @@
     background-color: #1f1f1f;
 }
 
+.container-table{
+    margin: 30px auto auto;
+    padding: 20px;
+    display: table;
+    text-align: center;
+}

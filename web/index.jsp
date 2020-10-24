@@ -7,11 +7,11 @@
     <link rel="shortcut icon" href="img/redgry.png">
     <title>RedGry and LeartAule Project</title>
 
-    <link rel="stylesheet index" href="css/main.css">
-    <link rel="stylesheet index" href="css/index.css">
-    <link rel="stylesheet table" href="css/table.css">
-    <link rel="stylesheet header" href="css/header_style.css">
-    <link rel="stylesheet header" href="css/footer_style.css">
+    <link rel="stylesheet index" href="<%= request.getContextPath() %>/css/main.css">
+    <link rel="stylesheet index" href="<%= request.getContextPath() %>/css/index.css">
+    <link rel="stylesheet table" href="<%= request.getContextPath() %>/css/table.css">
+    <link rel="stylesheet header" href="<%= request.getContextPath() %>/css/header_style.css">
+    <link rel="stylesheet header" href="<%= request.getContextPath() %>/css/footer_style.css">
 </head>
 
 <body>
@@ -98,7 +98,7 @@
                                   d="M 50 150 A 100 100, 90, 0, 0, 150 250 L 150 150 Z"></path>
 
                             <!-- Точки на графике -->
-                            //jsp:include page="jsp/dots.jsp">
+                            <jsp:include page="jsp/dots.jsp">
 
                         </svg>
                     </div>
@@ -196,7 +196,7 @@
             <div class="text-center">
                 <div class="output" id="output">
 
-                    //jsp:include page="jsp/table.jsp"/>
+                    <jsp:include page="jsp/table.jsp"/>
 
                 </div>
             </div>
@@ -219,6 +219,6 @@
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="<%= request.getContextPath() %>/js/script.js"></script>
 </body>
 </html>

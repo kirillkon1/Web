@@ -4,6 +4,7 @@ package main.java.servlets;
 import main.java.models.Entries;
 import main.java.models.Entry;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -43,6 +44,10 @@ public class AreaCheckServlet extends HttpServlet {
 
         entries.addEntry(entry);
         session.setAttribute("entries", entries);
+
+        // Переотправка
+        RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/result.jsp");
+        dispatcher.forward(request, response);
     }
 
     @Override
